@@ -6,7 +6,7 @@
         $('.btn-success').click(function(){
             let textNotification = $('.to-do-control').val();
             $('.to-do').append('<li><span class="content">' + textNotification + '</span> <i class="fa fa-times" aria-hidden="true"></i></li>');
-            $('.to-do-control').val('');
+            $('.to-do-control').val(''); //clear input
         });
 
         $('ul').on('click', 'li>span.content', function () {
